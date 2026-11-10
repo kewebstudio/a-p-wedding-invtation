@@ -1,0 +1,116 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff9f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: auto;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wedding-app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+.wedding-envelope-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.wedding-surprises {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+.surprise-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* MOBILE SCROLLING */
+@media (max-width: 600px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .wedding-app {
+    min-height: 100svh;
+    overflow: visible;
+  }
+
+  .wedding-envelope-screen {
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .wedding-surprises {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .surprise-section {
+    width: 100%;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
